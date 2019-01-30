@@ -1,6 +1,6 @@
 FROM golang:alpine AS build-env
-WORKDIR /usr/local/go/src/github.com/keel-hq/push-workflow-example
-COPY . /usr/local/go/src/github.com/keel-hq/push-workflow-example
+WORKDIR /usr/local/go/src/github.com/ktapasvi/push-workflow-example
+COPY . /usr/local/go/src/github.com/ktapasvi/push-workflow-example
 RUN go install -ldflags="-w -s"
 
 FROM alpine:latest
