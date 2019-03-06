@@ -7,4 +7,6 @@ printenv
 
 docker build --build-arg CUSTOM=$VAR -f $DOCKERFILE_PATH -t $DOCKER_REPO:$SOURCE_COMMIT .
 
+docker push $DOCKER_REPO:$SOURCE_COMMIT
+
 echo "------ HOOK END - BUILD -------"
