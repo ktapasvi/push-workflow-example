@@ -5,7 +5,6 @@ printenv
 
 #docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` --build-arg VCS_REF=$SOURCE_COMMIT -t $IMAGE_NAME .
 
-
 docker build --build-arg CUSTOM=$VAR -f $DOCKERFILE_PATH -t $IMAGE_NAME $DOCKER_REPO:$SOURCE_COMMIT .
 
 echo "------ HOOK END - BUILD -------"
