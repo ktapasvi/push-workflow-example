@@ -1,10 +1,4 @@
-MAINTAINER TK
-+ ARG BRANCH="master"
-+ ARG COMMIT=""
-+ LABEL branch=${BRANCH}
-+ LABEL commit=${COMMIT}
-+ ENV COMMIT_SHA=${COMMIT}
-+ ENV COMMIT_BRANCH=${BRANCH}
+
 
 FROM golang:alpine AS build-env
 WORKDIR /usr/local/go/src/github.com/ktapasvi/push-workflow-example
