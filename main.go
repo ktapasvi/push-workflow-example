@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-var version = "v47"
+var version = "v48"
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
